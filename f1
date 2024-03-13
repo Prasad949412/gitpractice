@@ -1,0 +1,45 @@
+using System;
+using System.IO;
+using System.Threading.Tasks;
+
+class Program
+{
+    // Function to read data from a file
+    static async Task<string> ReadFileAsync(string filePath)
+    {
+        using (StreamReader reader = new StreamReader(filePath))
+        {
+            return await reader.ReadToEndAsync();
+        }
+    }
+
+    // Function to write data to a file
+    static async Task WriteFileAsync(string filePath, string data)
+    {
+        using (StreamWriter writer = new StreamWriter(filePath))
+        {
+            await writer.WriteAsync(data);
+        }
+    }using System;
+using System.IO;
+using System.Threading.Tasks;
+
+class Program
+{
+    // Function to read data from a file
+    static async Task<string> ReadFileAsync(string filePath)
+    {
+        using (StreamReader reader = new StreamReader(filePath))
+        {
+            return await reader.ReadToEndAsync();
+        }
+    }
+
+    // Function to write data to a file
+    static async Task WriteFileAsync(string filePath, string data)
+    {
+        using (StreamWriter writer = new StreamWriter(filePath))
+        {
+            await writer.WriteAsync(data);
+        }
+    }
